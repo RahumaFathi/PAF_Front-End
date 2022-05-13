@@ -94,7 +94,7 @@ public class Billing {
 				output += "<td>" + units + "</td>"; 
 				
 				// buttons
-				output += "<td><input name='btnUpdate' type='button' value='Update' class='btn btn-secondary'/></td>" 
+				output += "<td><input name='btnUpdate' type='button' billingId = '"+billingId+"' customerName = '"+customerName+"' units = '"+units+"' amount = '"+amount+"' value='Update' class='update btn btn-secondary'/></td>" 
 				+ "<td>" 
 						+ "<input name='btnRemove' deleteId = '"+billingId+"' type='button' value='Remove' class='delete btn btn-danger'>" 
 				 + "</td></tr>";
